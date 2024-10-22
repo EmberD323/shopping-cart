@@ -1,20 +1,16 @@
+import "./styles/App.css"
 
-
-import { useState } from "react";
+import { Link,Outlet } from "react-router-dom";
 
 const App = () => {
-  const [heading, setHeading] = useState("Magnificent Monkeys");
-
-  const clickHandler = () => {
-    setHeading("Radical Rhinos");
-  };
-
+//nav bar and outlet
   return (
     <>
-      <button type="button" onClick={clickHandler}>
-        Click Me
-      </button>
-      <h1>{heading}</h1>
+      <Link to="homepage">Home Page</Link>
+      <Link to="shoppage">Shop Page</Link>
+      
+      <h2>Page clicked</h2>
+      <Outlet />
     </>
   );
 };
