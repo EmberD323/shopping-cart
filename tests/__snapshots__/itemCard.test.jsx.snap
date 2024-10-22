@@ -1,0 +1,65 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Nav Bar component > renders card 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <div
+      class="itemTitle"
+    />
+    <div
+      class="itemImage"
+    />
+    <div
+      class="amount"
+    >
+      <button>
+        -
+      </button>
+      <form>
+        <label />
+        <input />
+      </form>
+      <button>
+        +
+      </button>
+    </div>
+    <button>
+      add to cart
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Nav Bar component > renders twolinks 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <div
+      class="itemTitle"
+    />
+    <div
+      class="itemImage"
+    />
+    <div
+      class="amount"
+    >
+      <button>
+        -
+      </button>
+      <form>
+        <label />
+        <input />
+      </form>
+      <button>
+        +
+      </button>
+    </div>
+    <button>
+      add to cart
+    </button>
+  </div>
+</div>
+`;

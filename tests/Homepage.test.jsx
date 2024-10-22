@@ -3,7 +3,7 @@ import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import HomePage from "../src/components/Homepage";
 
-describe("App component", () => {
+describe("Homepage component", () => {
   it("renders brand name and an image", () => {
     // since screen does not have the container property, we'll destructure render to obtain a container for this test
     const { container } = render(<HomePage />);
