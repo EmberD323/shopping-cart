@@ -1,5 +1,6 @@
 import { useOutletContext } from "react-router-dom";
 import ItemCard from "./itemCard";
+import "../styles/Shoppage.css"
 export default function ShopPage (){
     const [cartNumber,setCartNumber] = useOutletContext();
     return (
@@ -12,7 +13,7 @@ export default function ShopPage (){
                 <ItemCard itemNumber={5} cartNumber={cartNumber} setCartNumber={setCartNumber}/>
                 <ItemCard itemNumber={6} cartNumber={cartNumber} setCartNumber={setCartNumber}/>
             </div>
-            <p>This is the Shop Page</p>
+            
         </>
     )
 }

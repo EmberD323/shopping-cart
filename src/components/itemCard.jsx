@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react";
-import "../styles/itemCard.css"
+
 
 
 export default function ItemCard ({itemNumber,cartNumber,setCartNumber}){
@@ -15,18 +15,13 @@ export default function ItemCard ({itemNumber,cartNumber,setCartNumber}){
         
     }
     function handleNumberIncrease(){
-        console.log(typeof numberOfItems)
         setNumberofItems(numberOfItems+1);
     }
     function handleNumberChange(e){
-        console.log(typeof numberOfItems)
-        console.log(typeof Number(e.target.value))
         setNumberofItems(Number(e.target.value))
 
     }
     function handleAddToCart(){
-        console.log(typeof numberOfItems)
-        console.log(typeof cartNumber)
         setCartNumber(cartNumber+numberOfItems);
     }
     useEffect(()=>{
@@ -43,12 +38,12 @@ export default function ItemCard ({itemNumber,cartNumber,setCartNumber}){
             <div className="itemTitle">{fakeItem.title}</div>
             <img className="itemImage" src={fakeItem.image}/>
             <div className="itemCost">${fakeItem.price}</div>
-            <div className="numberofItems">
+            <div className="numberOfItems">
                 <button onClick={handleNumberDecrease}>-</button>
                 <input type="number" value={numberOfItems} onChange={handleNumberChange}/>
                 <button onClick={handleNumberIncrease}>+</button>
             </div>
-            <button onClick={handleAddToCart}>add to cart</button>
+            <button onClick={handleAddToCart} className="addToCart">Add to cart</button>
             
         </div>
     )

@@ -8,11 +8,11 @@ const App = () => {
   const [cartNumber,setCartNumber] = useState(0);
 //nav bar and outlet
   return (
-    <>
+    <div className="content">
       <NavBar cartNumber={cartNumber} setCartNumber={setCartNumber}/>
       <Outlet context={[cartNumber,setCartNumber]}/>
       
-    </>
+    </div>
   );
 };
 

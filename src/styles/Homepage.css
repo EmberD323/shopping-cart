@@ -1,5 +1,6 @@
 .imageContainer{
     position: relative;
+    padding: 50px;
 }
 .brand{
     position:absolute;
@@ -9,4 +10,5 @@
     padding:0;
     margin:0;
     font-size: 50px;
+    color:white;
 }

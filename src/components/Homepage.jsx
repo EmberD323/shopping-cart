@@ -24,7 +24,6 @@ export default function HomePage (){
             <img src={imageURL} alt="Dummy image"/> 
             <img src={imageURL} alt="Dummy image"/> 
             <img src={imageURL} alt="Dummy image"/> 
-            <img src={imageURL} alt="Dummy image"/> 
             <div className="brand">Brand Name</div>
         </div>
         
